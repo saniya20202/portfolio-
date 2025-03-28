@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    padding-top: 60px;  /* Make space for your fixed navbar */
+}
+    nav{
+        background-color: #000000;
+        height: 40px;
+        top: 10px;
+        width: 98%;
+        display: flex;
+        border-radius: 20px; 
+        margin-left: 5px;
+        margin-right: 5px;
+        position: fixed;
+        justify-content:center;
+        align-items: center;
+        padding: 5px;
+    
+    }
+    nav ul{
+        display: flex;
+        padding: 20px;
+        margin: 20px;
+    }
+    nav ul li {
+        list-style: none;
+        padding: 10px;
+        position: relative;
+    }
+    nav ul li a{
+        text-decoration: none;
+        position: relative;
+        color: white;
+        padding: 10px;
+    }
+    nav ul li a:after{
+        content:"";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 3px;
+        background-color: #FD6F00;
+        transform: scaleX(0);
+        transition: transform 0.4s ease-in-out;
+        transform-origin: left
+
+    }
+    nav ul li a:hover::after {
+        transform: scaleX(1);
+        
+    }
+    nav ul li a:hover{
+        color: #FD6F00;
+    }
+
+
+    .profile{
+        background-color: #eb7922;
+        border-radius: 20px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: larger;
+        width: 100px;
+        color: black;
+        cursor: pointer;
+        font-weight: bold;
+        position: absolute;
+        right: 35px; /* Distance from the right edge */
+        }
