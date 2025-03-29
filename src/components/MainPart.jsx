@@ -1,7 +1,15 @@
 import React from 'react';
 import "./MainPart.css";
+import {useTypewriter, Cursor} from 'react-simple-typewriter'
 
 const MainPart = () => {
+    const [text] = useTypewriter({
+        words: ['Full-Stack Developer', 'Frontend Developer', 'Backend Developer', 'UI/UX Designer','Software Developer','Web Developer'],
+        loop: 0,
+        typeSpeed: 70,
+        deleteSpeed: 80,
+        
+    });
     return (
         <div className='mainpart'>
             <div className="welcomeNote">
@@ -13,7 +21,8 @@ const MainPart = () => {
             </div>
 
             <div className="job-title">
-                <h4>Frontend Developer</h4>
+            <h4>{text}
+                <Cursor cursorBlinking={true} cursorStyle='|' cursorColor='green' /></h4>
             </div>
         </div>
     );
