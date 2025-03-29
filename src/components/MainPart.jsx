@@ -3,9 +3,18 @@ import "./MainPart.css";
 
 const MainPart = () => {
     return (
-        <div className ="welcomeNote">
-            <h4>Hi i am </h4>
-            <p><h3>Sandipa Senadhira</h3></p>
+        <div className='mainpart'>
+            <div className="welcomeNote">
+                <h4>Hi i am, </h4>
+            </div>   
+
+            <div className="name">
+                <h3>Sendipa Senadhira</h3>        
+            </div>
+
+            <div className="job-title">
+                <h4>Frontend Developer</h4>
+            </div>
         </div>
     );
 };
