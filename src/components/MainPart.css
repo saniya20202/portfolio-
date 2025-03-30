@@ -51,5 +51,6 @@
 }
 .icon-wrapper:hover {
     border: 3px solid rgb(255, 255, 255); /* Change border color on hover */
+    background-color:  rgb(221, 114, 27);
 
 }
