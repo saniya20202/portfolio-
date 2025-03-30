@@ -38,3 +38,14 @@
     display: flex;
     font-size: 25px;
 }
+.icon-wrapper {
+    background-color: rgb(37, 37, 37); 
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    border: 3px solid rgb(207, 109, 70); 
+    opacity: 0.9; 
+}
