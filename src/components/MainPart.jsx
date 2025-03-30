@@ -38,6 +38,9 @@ const MainPart = () => {
            <div className="icon-wrapper"><IoIosGlobe /></div>
          </div>
 
+         <button className='btn1'>Hire me </button>
+         <button className='btn2'>Download CV</button>
+
 
             
         </div>
