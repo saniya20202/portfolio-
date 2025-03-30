@@ -32,3 +32,9 @@
     
 
 }  
+.socials {
+    margin-top: -15px;
+    gap: 20px;
+    display: flex;
+    font-size: 25px;
+}
