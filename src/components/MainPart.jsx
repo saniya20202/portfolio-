@@ -1,12 +1,17 @@
 import React from 'react';
 import "./MainPart.css";
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
+import { PiLinkedinLogo } from "react-icons/pi";
+import { FaInstagram } from "react-icons/fa";
+import { AiOutlineGithub } from "react-icons/ai";
+import { IoIosGlobe } from "react-icons/io";
+
 
 const MainPart = () => {
     const [text] = useTypewriter({
         words: ['Full-Stack Developer', 'Frontend Developer', 'Backend Developer', 'UI/UX Designer','Software Developer','Web Developer'],
         loop: 0,
-        typeSpeed: 70,
+        typeSpeed: 100,
         deleteSpeed: 80,
         
     });
@@ -17,15 +22,29 @@ const MainPart = () => {
             </div>   
 
             <div className="name">
-                <h3>Sendipa Senadhira</h3>        
+                <h3>Sendipa Senadhira</h3> 
+   
             </div>
 
             <div className="job-title">
             <h4>{text}
-                <Cursor cursorBlinking={true} cursorStyle='|' cursorColor='green' /></h4>
+                <Cursor cursorBlinking={true} cursorStyle='|' cursorColor='white' /></h4>
             </div>
+
+            <div className="socials">
+            <PiLinkedinLogo />
+            <FaInstagram />
+            <AiOutlineGithub />
+            <IoIosGlobe />
+
+            </div>
+
+            
         </div>
+
     );
 };
 
 export default MainPart;
+
+
