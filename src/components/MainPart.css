@@ -49,3 +49,7 @@
     border: 3px solid rgb(207, 109, 70); 
     opacity: 0.9; 
 }
+.icon-wrapper:hover {
+    border: 3px solid rgb(255, 255, 255); /* Change border color on hover */
+
+}
