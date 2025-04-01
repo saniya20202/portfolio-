@@ -27,6 +27,7 @@ const AboutMe = () => {
 
 
                 </p>
+                <button className='btn2'>Download CV</button>
                 </div>
             </div>
                 );
