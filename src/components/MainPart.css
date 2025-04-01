@@ -1,6 +1,7 @@
 
 .mainpart{
-    margin-left: 40px;
+    margin-top: 140px;
+    margin-left: 80px;
     margin-bottom: 280px;
 }
 
@@ -22,7 +23,7 @@
 
 }
 .job-title{
-    color: rgb(221, 114, 27);
+    color:rgb(207, 109, 70) ;
     font-size: 50px;
     margin-top: -65px;
 
@@ -32,27 +33,32 @@
     
 
 }  
+
 .socials {
     margin-top: -15px;
     gap: 20px;
     display: flex;
     font-size: 25px;
 }
+
+
+
 .icon-wrapper {
-    background-color: rgb(37, 37, 37); 
+    background-color: rgb(37, 37, 37);
     border-radius: 50%;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s;
-    border: 3px solid rgb(207, 109, 70); 
+    transition: background-color 0.5s;
+    border: 3px solid rgb(255, 119, 65); 
     opacity: 0.9; 
 }
-.icon-wrapper:hover {
-    border: 3px solid rgb(255, 255, 255); /* Change border color on hover */
-    background-color:  rgb(221, 114, 27);
 
+
+.icon-wrapper:hover {
+    border: 3px solid rgb(255, 255, 255); 
+    background-color:  rgb(221, 114, 27); 
 }
 .btn1{
 
@@ -67,7 +73,7 @@
     padding: 10px;
     margin-top: 60px;
     margin-right: 20px;
-    background-color: rgb(39, 39, 39);
-    width: 150px;
-    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(56, 56, 56, 0.308);
+    width: 200px;
+    border: 1px solid rgb(71, 71, 71);
 }
