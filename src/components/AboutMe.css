@@ -19,3 +19,7 @@
     border-radius: 20px;  /* Makes the image circular */
     box-shadow: 0px 4px 8px rgba(255, 137, 2, 0.2);
 }
+.aboutme-content {
+    flex: 2;  /* Gives text more space than the image */
+    text-align: left;
+}
