@@ -1,0 +1,8 @@
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;  /* Space between image and text */
+    padding: 50px;
+    max-width: 1800px;
+}
