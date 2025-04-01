@@ -23,3 +23,9 @@
     flex: 2;  /* Gives text more space than the image */
     text-align: left;
 }
+.aboutme h1 {
+    font-size: 50px;
+    color: #6b6969;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
