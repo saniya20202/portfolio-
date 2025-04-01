@@ -29,3 +29,10 @@
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
 }
+.aboutme p {
+    font-size: 20px;
+    color: #6b6969;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    line-height: 1.6;
+}
