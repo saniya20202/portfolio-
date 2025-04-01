@@ -6,3 +6,9 @@
     padding: 50px;
     max-width: 1800px;
 }
+.aboutmeimg {
+    flex: 1;  /* Allows the image container to take some space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
