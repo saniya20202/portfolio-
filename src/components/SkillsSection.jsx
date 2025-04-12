@@ -25,4 +25,9 @@ const SkillsSection = () => {
     { name: 'MongoDB', icon: 'devicon-mongodb-plain', proficiency: 75 },
     { name: 'Figma', icon: 'devicon-figma-plain', proficiency: 85 }
   ];
-}
+  const handlePrev = () => {
+    if (animating) return;
+    setAnimating(true);
+    setActiveSkill(prev => (prev === 0 ? skills.length - 1 : prev - 1));
+    setTimeout(() => setAnimating(false), 500);
+  };
