@@ -6,33 +6,48 @@
     padding: 50px;
     max-width: 1800px;
 }
+
 .aboutmeimg {
     flex: 1;  /* Allows the image container to take some space */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
+
 .aboutmeimg img {
-    margin-top: 100px;
+    margin-top: 20px;
     width: 600px;  /* Adjust the image size */
     height: auto;
     border-radius: 20px;  /* Makes the image circular */
-    box-shadow: 0px 4px 8px rgba(255, 137, 2, 0.2);
+    box-shadow: 2px 4px 30px rgba(255, 137, 2, 0.9);
 }
+
 .aboutme-content {
     flex: 2;  /* Gives text more space than the image */
     text-align: left;
 }
+
 .aboutme h1 {
     font-size: 50px;
-    color: #6b6969;
+    color: #ff6600;
     font-family: 'Courier New', Courier, monospace;
-    text-align: left;
+    text-align: center;
 }
+
 .aboutme p {
     font-size: 20px;
-    color: #6b6969;
+    color: #cec7c7;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
     line-height: 1.6;
+}
+.btn2{
+
+    padding: 10px;
+    margin-top: 60px;
+    margin-left: 230px;
+    background-color: rgb(233, 116, 38);
+    width: 200px;
+    border: 1px solid rgb(71, 71, 71);
 }
