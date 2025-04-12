@@ -6,7 +6,9 @@ const App = () => {
   return (
     <div className='App'>
       <Navbar />     
-      <MainPart />    {/* ✅ Use the new component here */}
+      <MainPart />  
+      <AboutMe />     
+
     </div>
   );
 }
