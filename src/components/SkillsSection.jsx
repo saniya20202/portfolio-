@@ -38,3 +38,10 @@ const SkillsSection = () => {
         setActiveSkill(prev => (prev === skills.length - 1 ? 0 : prev + 1));
         setTimeout(() => setAnimating(false), 500);
       };
+        // Function to handle direct skill selection
+  const handleSkillSelect = (index) => {
+    if (animating || index === activeSkill) return;
+    setAnimating(true);
+    setActiveSkill(index);
+    setTimeout(() => setAnimating(false), 500);
+  };
