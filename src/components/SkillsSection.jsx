@@ -61,4 +61,12 @@ const SkillsSection = () => {
 
       return visibleItems;
     };
+
+  // Auto scroll to keep the active skill square in view
+  useEffect(() => {
+    const activeSquare = document.querySelector('.skill-square.active');
+    if (activeSquare) {
+      activeSquare.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+  }, [activeSkill]);
   
