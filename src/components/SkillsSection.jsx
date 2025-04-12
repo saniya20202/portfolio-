@@ -31,3 +31,10 @@ const SkillsSection = () => {
     setActiveSkill(prev => (prev === 0 ? skills.length - 1 : prev - 1));
     setTimeout(() => setAnimating(false), 500);
   };
+    // Function to handle next button click
+    const handleNext = () => {
+        if (animating) return;
+        setAnimating(true);
+        setActiveSkill(prev => (prev === skills.length - 1 ? 0 : prev + 1));
+        setTimeout(() => setAnimating(false), 500);
+      };
