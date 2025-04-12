@@ -69,4 +69,74 @@ const SkillsSection = () => {
       activeSquare.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     }
   }, [activeSkill]);
-  
+
+  return (
+    <section className="skills-section">
+      <div className="skills-header">
+        <h2 className="section-title">Technical Skills</h2>
+        <p className="section-subtitle">Technologies I've been working with</p>
+      </div>
+
+      <div className="skills-slider-container">
+        <button className="slider-control prev" onClick={handlePrev}>
+          <i className="fas fa-chevron-left"></i>
+        </button>
+        
+        <div className="skills-slider">
+          {getVisibleSkills().map(({skill, position, index}) => (
+            <div 
+              key={skill.name}
+              className={`skill-item ${index === activeSkill ? 'active' : ''}`}
+              onClick={() => handleSkillSelect(index)}
+            >
+              <div className="skill-icon-container">
+                <svg className="skill-progress-ring" width="100" height="100">
+                  <circle 
+                    className="skill-progress-ring-bg" 
+                    r="400"
+                    cx="50" 
+                    cy="50"
+                  />
+                  <circle 
+                    className="skill-progress-ring-circle" 
+                    r="40" 
+                    cx="50" 
+                    cy="50" 
+                    style={{
+                      strokeDasharray: `${2 * Math.PI * 40}`,
+                      strokeDashoffset: `${2 * Math.PI * 40 * (1 - skill.proficiency/100)}`
+                    }}
+                  />
+                </svg>
+                <i className={`${skill.icon} skill-icon ${index === activeSkill ? 'active' : ''}`}></i>
+              </div>
+              <span className="skill-name">{skill.name}</span>
+              {index === activeSkill && <span className="skill-proficiency">{skill.proficiency}%</span>}
+            </div>
+          ))}
+        </div>
+        
+        <button className="slider-control next" onClick={handleNext}>
+          <i className="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      {/* Square navigation */}
+      <div className="skill-squares-container">
+        <div className="skill-squares">
+          {skills.map((skill, index) => (
+            <div 
+              key={`square-${skill.name}`}
+              className={`skill-square ${index === activeSkill ? 'active' : ''}`}
+              onClick={() => handleSkillSelect(index)}
+            >
+              <i className={skill.icon}></i>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SkillsSection;
