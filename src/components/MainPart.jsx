@@ -22,7 +22,7 @@ const MainPart = () => {
             </div>   
 
             <div className="name">
-                <h3>Sendipa Senadhira</h3> 
+                <h3>Sandipa Senadhira</h3> 
    
             </div>
 
@@ -30,16 +30,20 @@ const MainPart = () => {
             <h4>{text}
                 <Cursor cursorBlinking={true} cursorStyle='|' cursorColor='white' /></h4>
             </div>
-
-         <div className="socials">
-           <div className="icon-wrapper"><PiLinkedinLogo /></div>
-           <div className="icon-wrapper"><FaInstagram /></div>
-           <div className="icon-wrapper"><AiOutlineGithub /></div>
-           <div className="icon-wrapper"><IoIosGlobe /></div>
+            
+        <div className="socials">
+        <div className="icon-wrapper"><PiLinkedinLogo /></div>
+        <div className="icon-wrapper"><FaInstagram /></div>
+        <div className="icon-wrapper"><AiOutlineGithub /></div>
+        <div className="icon-wrapper"><IoIosGlobe /></div>
          </div>
 
-         <button className='btn1'>Hire me </button>
-         <button className='btn2'>Download CV</button>
+        
+            <button className='btn1'>Hire me </button>
+            <button className='btn3'>Download CV</button>
+
+       
+         
 
 
             
