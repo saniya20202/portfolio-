@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import aboutme from "../assets/aboutme.jpg";
+import aboutme from "../assets/aboutme.jpg";  // Import the image correctly
 
 const AboutMe = () => {
     return (
@@ -28,8 +28,9 @@ const AboutMe = () => {
 
                 </p>
                 <button className='btn2'>Download CV</button>
-                </div>
             </div>
-                );
-            }
-            export default AboutMe;
+        </div>
+    );
+}
+
+export default AboutMe;
