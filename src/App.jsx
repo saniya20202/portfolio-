@@ -3,7 +3,7 @@ import Navbar from './components/navbar';
 import MainPart from './components/MainPart';  
 import AboutMe from './components/AboutMe';
 import SkillsSection from './components/SkillsSection';
-import Projects from './components/Projects';
+
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <MainPart /> 
       <AboutMe />   
       <SkillsSection />
-      <Projects />
+      
     </div>
   );
 }
