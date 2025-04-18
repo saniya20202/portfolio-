@@ -3,6 +3,7 @@ import "./MainPart.css";
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import { PiLinkedinLogo } from "react-icons/pi";
 import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiOutlineGithub } from "react-icons/ai";
 import { IoIosGlobe } from "react-icons/io";
 import { SiGmail } from "react-icons/si";
