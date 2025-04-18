@@ -1,76 +1,193 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 .App {
-    padding-top: 60px;  /* Make space for your fixed navbar */
+    padding-top: 60px; /* Make space for your fixed navbar */
 }
-    nav{
-        
-        height: 40px;
-        top: 10px;
-        width: 98%;
-        display: flex;
-        border-radius: 20px; 
-        margin-left: 5px;
-        margin-right: 5px;
-        position: fixed;
-        justify-content:center;
-        align-items: center;
-        padding: 5px;
+
+nav {
+    height: 40px;
+    top: 20px;
+    width: 98%;
+    display: flex;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    z-index: 1000; /* Ensure navbar stays on top */
+}
+
+/* Checkbox hack for mobile menu */
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    position: absolute;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-btn:hover {
+    color: #FD6F00;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #FD6F00;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: #FD6F00;
+}
+
+.profile {
+    background-color: #eb7922;
+    border-radius: 10px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: larger;
+    width: 100px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    right: 35px; /* Distance from the right edge */
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 992px) {
+    nav ul li a {
+        font-size: 18px;
+        padding: 8px;
+    }
     
+    nav ul {
+        padding: 15px;
+        margin: 15px;
     }
-    nav ul{
-        display: flex;
-        padding: 20px;
-        margin: 20px;
+    
+    .profile {
+        width: 90px;
+        font-size: 16px;
+        right: 25px;
     }
-    nav ul li {
-        list-style: none;
-        padding: 10px;
-        position: relative;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
     }
-    nav ul li a{
-        text-decoration: none;
-        position: relative;
-        color: white;
-        padding: 10px;
+    
+    nav {
+        justify-content: flex-start;
+        height: auto;
+        padding: 10px 0;
     }
-    nav ul li a:after{
-        content:"";
-        position: absolute;
+    
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70%;
+        height: 100vh;
+        margin: 0;
+        padding: 80px 0 0 0;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    /* CSS-only menu toggle using checkbox hack */
+    #menu-toggle:checked ~ nav ul {
         left: 0;
-        bottom: -5px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
         width: 100%;
-        height: 3px;
-        background-color: #FD6F00;
-        transform: scaleX(0);
-        transition: transform 0.4s ease-in-out;
-        transform-origin: left
-
     }
-    nav ul li a:hover::after {
-        transform: scaleX(1);
-        
+    
+    nav ul li a {
+        padding: 10px 20px;
+        display: block;
+        font-size: 18px;
     }
-    nav ul li a:hover{
-        color: #FD6F00;
+    
+    .profile {
+        width: 90px;
+        height: 35px;
+        font-size: 16px;
+        right: 15px;
     }
+}
 
-
-    .profile{
-        background-color: #eb7922;
-        border-radius: 20px;
-        height: 40px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        font-size: larger;
-        width: 100px;
-        color: black;
-        cursor: pointer;
-        font-weight: bold;
-        position: absolute;
-        right: 35px; /* Distance from the right edge */
-        }
+/* Media query for very small devices */
+@media screen and (max-width: 480px) {
+    nav {
+        width: 95%;
+        top: 10px;
+    }
+    
+    .profile {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        right: 10px;
+    }
+    
+    nav ul {
+        width: 80%;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+}
