@@ -2,13 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;  /* Space between image and text */
+    gap: 50px;
     padding: 50px;
     max-width: 1800px;
+    background-color: #161616;
 }
 
 .aboutmeimg {
-    flex: 1;  /* Allows the image container to take some space */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,14 +18,15 @@
 
 .aboutmeimg img {
     margin-top: 20px;
-    width: 600px;  /* Adjust the image size */
+    width: 100%;  /* Changed to percentage for responsiveness */
+    max-width: 600px;  /* Maximum width */
     height: auto;
-    border-radius: 20px;  /* Makes the image circular */
+    border-radius: 20px;
     box-shadow: 2px 4px 30px rgba(255, 137, 2, 0.9);
 }
 
 .aboutme-content {
-    flex: 2;  /* Gives text more space than the image */
+    flex: 2;
     text-align: left;
 }
 
@@ -42,12 +44,80 @@
     margin-top: 20px;
     line-height: 1.6;
 }
-.btn2{
 
+.btn2 {
     padding: 10px;
     margin-top: 60px;
     margin-left: 230px;
     background-color: rgb(233, 116, 38);
     width: 200px;
-    border: 1px solid rgb(71, 71, 71);
+    border: 2px solid rgb(71, 71, 71);
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 992px) {
+    .aboutme {
+        padding: 30px;
+        gap: 30px;
+    }
+    
+    .aboutme h1 {
+        font-size: 40px;
+    }
+    
+    .aboutme p {
+        font-size: 18px;
+    }
+    
+    .btn2 {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .aboutme {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .aboutmeimg {
+        width: 100%;
+    }
+    
+    .aboutme-content {
+        width: 100%;
+    }
+    
+    .aboutme h1 {
+        font-size: 36px;
+    }
+    
+    .aboutme p {
+        font-size: 16px;
+    }
+    
+    .btn2 {
+        margin: 30px auto 0;
+        display: block;
+        width: 80%;
+        max-width: 200px;
+    }
+}
+
+/* Media query for very small devices */
+@media screen and (max-width: 480px) {
+    .aboutme {
+        padding: 15px;
+    }
+    
+    .aboutme h1 {
+        font-size: 30px;
+    }
+    
+    .aboutme p {
+        font-size: 15px;
+    }
 }
