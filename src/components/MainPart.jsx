@@ -2,7 +2,6 @@ import React from 'react';
 import "./MainPart.css";
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import { PiLinkedinLogo } from "react-icons/pi";
-import { FaInstagram } from "react-icons/fa";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiOutlineGithub } from "react-icons/ai";
 import { IoIosGlobe } from "react-icons/io";
@@ -33,11 +32,33 @@ const MainPart = () => {
                 <Cursor cursorBlinking={true} cursorStyle='|' cursorColor='white' /></h4>
             </div>
             
+            <div className="socials">
+    <a href="https://www.linkedin.com/in/sandipadeshan/" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+        <PiLinkedinLogo />
+    </a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+        <FaInstagram />
+    </a>
+    <a href="https://github.com/saniya20202" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+        <AiOutlineGithub />
+    </a>
+    <a href="https://yourwebsite.com/" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+        <IoIosGlobe />
+    </a>
+    <a href="mailto:your-sandipasenadhira@gmail.com" className="icon-wrapper">
+        <SiGmail />
+    </a>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+        <FaFacebook />
+    </a>
+</div>
 
         
-            <button className='btn1'>Hire me </button>
-            <button className='btn3'>Download CV</button>
 
+
+                
+                <button className='btn1'>Hire me </button>
+                <button className='btn3'>Download CV</button>
        
          
 
