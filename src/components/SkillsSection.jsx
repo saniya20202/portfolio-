@@ -23,7 +23,8 @@ const SkillsSection = () => {
     { name: '.NET', icon: 'devicon-dot-net-plain', proficiency: 70 },
     { name: 'MySQL', icon: 'devicon-mysql-plain', proficiency: 80 },
     { name: 'MongoDB', icon: 'devicon-mongodb-plain', proficiency: 75 },
-    { name: 'Figma', icon: 'devicon-figma-plain', proficiency: 85 }
+    { name: 'Figma', icon: 'devicon-figma-plain', proficiency: 85 },
+    { name: 'PostgreSQL', icon: 'devicon-postgresql-plain', proficiency: 75 },
   ];
 
   // Function to handle previous button click
