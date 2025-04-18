@@ -1,80 +1,278 @@
-
-.mainpart{
-    margin-top: 260px;
-    margin-left: 80px;
-    margin-bottom: 280px;
-}
-
-.welcomeNote h4{
-    font-size: 28px;
-    color: #8a8989;
-    font-weight: 400;
-
-}
-.name{
-    font-size: 35px;
-    margin-top: -40px;
-    color: #c0bebe;
-    font-weight: 200;
-
-}
-.name h3{
-    font-weight: 500;
-
-}
-.job-title{
-    color:rgb(255, 123, 0) ;
-    font-size: 50px;
-    margin-top: -65px;
-
-}
-.job-title h4{
-    font-weight:500;
-    
-
-}  
-
-.socials {
-    margin-top: -15px;
-    gap: 20px;
-    display: flex;
-    font-size: 25px;
-}
-
-
-
-
-.icon-wrapper {
-    background-color: rgb(37, 37, 37); 
-    border-radius: 50%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.5s;
-    border: 3px solid rgb(255, 119, 65); /* Optional: Add a border */
-    opacity: 0.9; /* Optional: Set initial opacity */
-}
-
-/* Hover effect */
-.icon-wrapper:hover {
-    border: 3px solid rgb(255, 255, 255); /* Change border color on hover */
-    background-color:  rgb(221, 114, 27); /* Change color on hover */
-}
-.btn1{
-
-    padding: 10px;
-    margin-top: 60px;
-    margin-right: 20px;
-    background-color: rgb(221, 114, 27);
-    width: 150px;
-}
-.btn3{
-
-    padding: 10px;
-    margin-top: 60px;
-    margin-right: 20px;
-    background-color: rgba(56, 56, 56, 0.308);
-    width: 200px;
-    border: 1px solid rgb(71, 71, 71);
-}
+:root {
+    --primary-color: #ff7b00;       /* Vibrant orange */
+    --secondary-color: #ff5500;     /* Darker orange */
+    --accent-color: #ffaa44;        /* Lighter orange */
+    --text-light: #ffffff;          /* Pure white */
+    --text-muted: #c0bebe;          /* Light gray */
+    --bg-dark: #1a1a1a;             /* Dark background */
+    --bg-darker: #0d0d0d;           /* Even darker background */
+    --success-color: #ff914d;       /* Orange tint */
+  }
+  
+  .mainpart {
+      margin-top: 260px;
+      margin-left: 80px;
+      margin-bottom: 280px;
+      color: var(--text-light);
+  }
+  
+  .welcomeNote h4 {
+      font-size: 28px;
+      color: var(--text-muted);
+      font-weight: 400;
+      letter-spacing: 1px;
+  }
+  
+  .name {
+      font-size: 35px;
+      margin-top: -40px;
+      color: var(--text-muted);
+      font-weight: 200;
+  }
+  
+  .name h3 {
+      font-weight: 500;
+      color: var(--text-light);
+  }
+  
+  .job-title {
+      color: var(--primary-color);
+      font-size: 50px;
+      margin-top: -65px;
+      text-shadow: 0 0 10px rgba(255, 123, 0, 0.3);
+  }
+  
+  .job-title h4 {
+      font-weight: 500;
+  }
+  
+  .socials {
+      margin-top: -15px;
+      gap: 20px;
+      display: flex;
+      font-size: 25px;
+  }
+  
+  .icon-wrapper {
+      background-color: var(--bg-darker);
+      border-radius: 50%;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+      border: 3px solid var(--primary-color);
+      opacity: 0.9;
+      color: var(--text-light);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect */
+  .icon-wrapper:hover {
+      border: 3px solid var(--accent-color);
+      background-color: var(--primary-color);
+      transform: rotate(360deg) scale(1.1);
+      transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 0 15px var(--primary-color);
+      color: #000;
+  }
+  
+  .btn1 {
+      padding: 12px 25px;
+      margin-top: 60px;
+      margin-right: 20px;
+      background-color: var(--primary-color);
+      width: 150px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn1:hover {
+      background-color: var(--secondary-color);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn3 {
+      padding: 12px 25px;
+      margin-top: 60px;
+      margin-right: 20px;
+      background-color: transparent;
+      width: 200px;
+      border: 1px solid var(--primary-color);
+      border-radius: 5px;
+      color: var(--primary-color);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  
+  .btn3:hover {
+      background-color: rgba(255, 123, 0, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styles remain the same as before */
+  /* Large screens (desktops) */
+  @media screen and (max-width: 1200px) {
+      .mainpart {
+          margin-top: 220px;
+          margin-left: 60px;
+          margin-bottom: 240px;
+      }
+      
+      .welcomeNote h4 {
+          font-size: 26px;
+      }
+      
+      .name {
+          font-size: 32px;
+      }
+      
+      .job-title {
+          font-size: 46px;
+      }
+  }
+  
+  /* Medium screens (tablets) */
+  @media screen and (max-width: 992px) {
+      .mainpart {
+          margin-top: 180px;
+          margin-left: 40px;
+          margin-bottom: 200px;
+      }
+      
+      .welcomeNote h4 {
+          font-size: 24px;
+      }
+      
+      .name {
+          font-size: 30px;
+          margin-top: -35px;
+      }
+      
+      .job-title {
+          font-size: 42px;
+          margin-top: -60px;
+      }
+      
+      .socials {
+          font-size: 22px;
+      }
+      
+      .btn1, .btn3 {
+          margin-top: 50px;
+      }
+  }
+  
+  /* Small screens (mobile devices) */
+  @media screen and (max-width: 768px) {
+      .mainpart {
+          margin-top: 150px;
+          margin-left: 25px;
+          margin-right: 25px;
+          margin-bottom: 150px;
+      }
+      
+      .welcomeNote h4 {
+          font-size: 22px;
+      }
+      
+      .name {
+          font-size: 28px;
+          margin-top: -30px;
+      }
+      
+      .job-title {
+          font-size: 38px;
+          margin-top: -50px;
+      }
+      
+      .socials {
+          font-size: 20px;
+          gap: 15px;
+      }
+      
+      .icon-wrapper {
+          padding: 8px;
+      }
+      
+      .btn1, .btn3 {
+          margin-top: 40px;
+          padding: 10px 15px;
+      }
+      
+      .btn1 {
+          width: 130px;
+      }
+      
+      .btn3 {
+          width: 170px;
+      }
+  }
+  
+  /* Extra small screens */
+  @media screen and (max-width: 480px) {
+      .mainpart {
+          margin-top: 120px;
+          margin-left: 15px;
+          margin-right: 15px;
+          margin-bottom: 120px;
+      }
+      
+      .welcomeNote h4 {
+          font-size: 18px;
+      }
+      
+      .name {
+          font-size: 24px;
+          margin-top: -25px;
+      }
+      
+      .job-title {
+          font-size: 32px;
+          margin-top: -40px;
+      }
+      
+      .socials {
+          font-size: 18px;
+          gap: 12px;
+      }
+      
+      .icon-wrapper {
+          padding: 7px;
+          border-width: 2px;
+      }
+      
+      .btn1, .btn3 {
+          margin-top: 30px;
+          padding: 8px 12px;
+          margin-right: 10px;
+          font-size: 14px;
+      }
+      
+      .btn1 {
+          width: 110px;
+      }
+      
+      .btn3 {
+          width: 140px;
+      }
+      
+      /* Stack buttons vertically on very small screens */
+      @media screen and (max-width: 360px) {
+          .btn1, .btn3 {
+              display: block;
+              margin-right: 0;
+              margin-bottom: 15px;
+              width: 80%;
+              max-width: 200px;
+          }
+      }
+  }
