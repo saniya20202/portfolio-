@@ -33,12 +33,6 @@ const MainPart = () => {
                 <Cursor cursorBlinking={true} cursorStyle='|' cursorColor='white' /></h4>
             </div>
             
-        <div className="socials">
-        <div className="icon-wrapper"><PiLinkedinLogo /></div>
-        <div className="icon-wrapper"><FaInstagram /></div>
-        <div className="icon-wrapper"><AiOutlineGithub /></div>
-        <div className="icon-wrapper"><IoIosGlobe /></div>
-         </div>
 
         
             <button className='btn1'>Hire me </button>
