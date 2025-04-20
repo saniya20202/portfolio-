@@ -76,7 +76,7 @@ const ContactMe = () => {
                 <a href="https://facebook.com" aria-label="Facebook"><FaFacebook /></a>
                 <a href="https://github.com/saniya20202" aria-label="GitHub"><AiOutlineGithub /></a>
                 <a href="mailto:info@example.com" aria-label="Email"><SiGmail /></a>
-                <a href="https://example.com" aria-label="Website"><IoIosGlobe /></a>
+                <a href="https://sandipasenadhira.netlify.app/" aria-label="Website"><IoIosGlobe /></a>
               </div>
             </div>
           </div>
