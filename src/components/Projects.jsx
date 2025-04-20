@@ -25,6 +25,7 @@ const Projects = () => {
     "Java": <FaJava />,
   };
 
+
   const [projects] = useState([
     {
       id: 1,
@@ -70,9 +71,8 @@ const Projects = () => {
       id: 1,
       title: "Portfolio Website",
       description: "A real-time ticketing simulator featuring a Java-based CLI for core operations and a frontend-backend system for user interactions. Designed to provide fast and efficient ticket processing, it accurately simulates real-world ticketing scenarios with real-time updates. ",
-      technologies: ["Java", "React", "Node.js"],
-      image: "/images/project1.jpg", // Replace with your actual image path
-      demoLink: "https://example.com/demo",
+      technologies: [ "React", "Tailwind CSS"],
+      image: "/images/project1.jpg", 
       codeLink: "https://github.com/yourusername/project"
     },
   ]);
