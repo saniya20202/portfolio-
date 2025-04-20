@@ -13,7 +13,7 @@
 }
 
 .contactme{
-    color: chocolate;
+    color: #ff6600;
     width: 100%;
     text-align: center;
     padding: 0 20px;
@@ -185,7 +185,7 @@ form button[type="submit"] {
     font-size: 32px;
 }
 
-/* Footer Styles */
+
 .footer {
     margin-top: 75px;
     background-color: #1b1b1b;
@@ -223,7 +223,7 @@ form button[type="submit"] {
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 10px;
-    color: #e67e22;
+    color:#ff6600;
 }
 
 .footer-section h3::after {
@@ -288,7 +288,7 @@ form button[type="submit"] {
 .footer-socials a:hover {
     border: 3px solid rgb(255, 125, 18);
     background-color: rgb(0, 0, 0);
-    color: chocolate;
+    color:#ff6600;
     transform:rotate(360deg);
     transition: all 0.9s ease;
 
