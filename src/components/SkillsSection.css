@@ -11,13 +11,13 @@
 }
 
 .skills-header h2 {
-  color: #ff7300;
+  color: #ff6600;
 }
 
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #ff7300;
+  color: #ff6600;
 }
 
 .section-subtitle {
@@ -88,7 +88,7 @@
 }
 
 .skill-item.active .skill-progress-ring-circle {
-  stroke: #ff7300;
+  stroke:#ff6600;
 }
 
 .skill-icon {
@@ -100,7 +100,7 @@
 
 .skill-icon.active {
   font-size: 45px;
-  color: #ff7300;
+  color:#ff6600;
 }
 
 .skill-item.active .skill-icon-container {
@@ -115,13 +115,13 @@
 }
 
 .skill-item.active .skill-name {
-  color: #ff7300;
+  color:#ff6600;
   font-weight: bold;
 }
 
 .skill-proficiency {
   font-size: 12px;
-  color: #ff7300;
+  color:#ff6600;
   margin-top: 8px;
 }
 
@@ -130,7 +130,7 @@
   border: none;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #ff7300;
+  color:#ff6600;
   cursor: pointer;
   padding: 0.5rem;
   display: flex;
@@ -197,14 +197,14 @@
 }
 
 .skill-square.active {
-  border-color: #ff7300;
-  color: #ff7300;
+  border-color:#ff6600;
+  color:#ff6600;
   transform: translateY(-5px);
   box-shadow: 1px 0px 15px rgb(255, 123, 0);
 }
 
 .skill-square.active i {
-  color: #ff7300;
+  color:#ff6600;
 }
 
 /* Large screens (desktops) */
