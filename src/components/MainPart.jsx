@@ -42,7 +42,7 @@ const MainPart = () => {
     <a href="https://github.com/saniya20202" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
         <AiOutlineGithub />
     </a>
-    <a href="https://yourwebsite.com/" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+    <a href="https://sandipasenadhira.netlify.app/" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
         <IoIosGlobe />
     </a>
     <a href="mailto:your-sandipasenadhira@gmail.com" className="icon-wrapper">
