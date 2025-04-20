@@ -19,13 +19,9 @@ const Projects = () => {
     "CSS3": <FaCss3Alt />,
     "MongoDB": <SiMongodb />,
     "Express": <SiExpress />,
-    "TypeScript": <SiTypescript />,
-    "Firebase": <SiFirebase />,
     "Tailwind CSS": <SiTailwindcss />,
     "Bootstrap": <SiBootstrap />,
-    "Chart.js": <SiChartdotjs />,
     "Python": <SiPython />,
-    "OpenWeather API": <FaServer />,
     "Java": <FaJava />,
   };
 
