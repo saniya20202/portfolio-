@@ -1,12 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    
 }
 
 nav {
     height: 40px;
-    top: 20px;
+    top: 12px;
     width: 98%;
     display: flex;
     border-radius: 20px;
@@ -17,6 +16,15 @@ nav {
     align-items: center;
     padding: 5px;
     z-index: 1000; /* Ensure navbar stays on top */
+    transition: all 0.3s ease; /* Smooth transition for background changes */
+}
+
+/* Scrolled state with blur effect */
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.151);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* For Safari */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Checkbox hack for mobile menu */
@@ -28,6 +36,7 @@ nav {
     display: none;
     position: absolute;
     left: 20px;
+    top: 15px;
     color: white;
     font-size: 24px;
     cursor: pointer;
@@ -79,20 +88,81 @@ nav ul li a:hover {
     color: #FD6F00;
 }
 
-.profile {
-    background-color: #eb7922;
-    border-radius: 10px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: larger;
-    width: 100px;
-    color: black;
-    cursor: pointer;
-    font-weight: bold;
+/* Logo Styles */
+.logo {
     position: absolute;
-    right: 35px; /* Distance from the right edge */
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+/* Logo name text */
+.logo-name {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.logo-link:hover .logo-name {
+    color: #FD6F00;
+}
+
+.logo-img {
+    border-radius: 50%;
+    height: 50px; 
+    display: block;
+}
+
+.logo-circle {
+    display: none;
+}
+
+.logo-circle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+
+.close-menu-container {
+    display: none;
+    width: 100%;
+    text-align: right;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.close-menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.close-menu-btn:hover {
+    color: #FD6F00;
+}
+
+.profile:hover {
+    background-color: #FF8A2B;
+    transform: translateY(-2px);
 }
 
 /* Media query for tablets */
@@ -105,6 +175,14 @@ nav ul li a:hover {
     nav ul {
         padding: 15px;
         margin: 15px;
+    }
+    
+    .logo-name {
+        font-size: 18px;
+    }
+    
+    .logo-img {
+        height: 35px; /* Slightly smaller logo on tablets */
     }
     
     .profile {
@@ -126,23 +204,42 @@ nav ul li a:hover {
         padding: 10px 0;
     }
     
+    nav.scrolled {
+        background-color: rgba(0, 0, 0, 0.85); /* Slightly darker when scrolled on mobile */
+    }
+    
     nav ul {
         position: fixed;
         top: 0;
         left: -100%;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         width: 70%;
         height: 100vh;
         margin: 0;
         padding: 80px 0 0 0;
         transition: left 0.3s ease;
         z-index: 1000;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Show menu when open */
+    nav ul.menu-open {
+        left: 0;
     }
     
     /* CSS-only menu toggle using checkbox hack */
     #menu-toggle:checked ~ nav ul {
         left: 0;
+    }
+    
+    .close-menu-container {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     
     nav ul li {
@@ -155,6 +252,37 @@ nav ul li a:hover {
         padding: 10px 20px;
         display: block;
         font-size: 18px;
+    }
+    
+    nav ul li a:after {
+        bottom: 5px;
+        width: 50%;
+        left: 25%; /* Center the underline */
+    }
+    
+    /* Switch from full logo to circle logo on mobile */
+    .logo {
+        right: 20px;
+        top: 5px;
+    }
+    
+    .logo-name, .logo-img {
+        display: none;
+    }
+    
+    .logo-circle {
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+    
+    .logo-circle:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(253, 111, 0, 0.6);
     }
     
     .profile {
@@ -172,6 +300,16 @@ nav ul li a:hover {
         top: 10px;
     }
     
+    .logo {
+        right: 15px;
+        top: 5px;
+    }
+    
+    .logo-circle {
+        width: 32px;
+        height: 32px;
+    }
+    
     .profile {
         width: 80px;
         height: 30px;
@@ -185,5 +323,10 @@ nav ul li a:hover {
     
     nav ul li a {
         font-size: 16px;
+    }
+    
+    .menu-btn {
+        font-size: 22px;
+        top: 10px;
     }
 }
