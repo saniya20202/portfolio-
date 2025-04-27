@@ -111,8 +111,10 @@
 @media screen and (max-width: 480px) {
     .aboutme {
         padding: 15px;
-        min-width: 450px;
+        width: 100%; /* Changed from min-width: 450px */
+        max-width: 100%;
         margin-top: 65px;
+        overflow-x: hidden; /* Added to prevent horizontal scroll */
     }
     
     .aboutme h1 {
@@ -121,5 +123,10 @@
     
     .aboutme p {
         font-size: 15px;
+    }
+    
+    .aboutmeimg img {
+        width: 100%;
+        max-width: 100%;
     }
 }

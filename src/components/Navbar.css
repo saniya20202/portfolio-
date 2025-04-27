@@ -21,7 +21,8 @@ nav {
 
 /* Scrolled state with blur effect */
 nav.scrolled {
-    background-color: rgba(0, 0, 0, 0.151);
+    height: 50px;
+    background-color: rgb(230, 121, 20);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px); /* For Safari */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -204,9 +205,7 @@ nav ul li a:hover {
         padding: 10px 0;
     }
     
-    nav.scrolled {
-        background-color: rgba(0, 0, 0, 0.85); /* Slightly darker when scrolled on mobile */
-    }
+
     
     nav ul {
         position: fixed;

@@ -1,5 +1,6 @@
+
 :root {
-    --primary-color: #ff7b00;       /* Vibrant orange */
+    --primary-color: #F56F10;       /* Vibrant orange */
     --secondary-color: #ff5500;     /* Darker orange */
     --accent-color: #ffaa44;        /* Lighter orange */
     --text-light: #ffffff;          /* Pure white */
@@ -24,6 +25,7 @@
 }
   
 .name {
+     font-family: "Inter", sans-serif;
     font-size: 35px;
     margin-top: -40px;
     color: var(--text-muted);
@@ -36,6 +38,9 @@
 }
   
 .job-title {
+    
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     color: var(--primary-color);
     font-size: 50px;
     margin-top: -65px;
@@ -43,7 +48,8 @@
 }
   
 .job-title h4 {
-    font-weight: 500;
+    font-weight: 900;
+
 }
   
 .socials {
@@ -591,17 +597,16 @@
 /* Extra small screens */
 @media screen and (max-width: 480px) {
     .profile-image-container img{
-        margin-left: -4px;
         width: 200px;
         height: 200px;
-        
-
-        
+        margin-left: 0; /* Changed from -4px */
     }
     .main-container {
         flex-direction: column;
         text-align: center;
-        max-width: 340px;
+        max-width: 100%; /* Changed from 340px */
+        padding: 0 15px;
+        overflow-x: hidden;
     }
 
     .mainpart {
@@ -609,6 +614,7 @@
         margin-left: 15px;
         margin-right: 15px;
         margin-bottom: 150px;
+        width: 100%; /* Added for consistency */
     }
     
     .welcomeNote h4 {
@@ -620,12 +626,13 @@
         margin-top: 5px;
     }
     
-   .job-title{
-    max-width: 3000px;
-    min-width: 450px;
-    font-size: 35px;
-    margin-top: -25px;
-   }
+    .job-title {
+        font-size: 35px;
+        margin-top: -25px;
+        max-width: 100%; /* Changed from 3000px */
+        min-width: auto; /* Changed from 450px */
+        overflow-wrap: break-word;
+    }
     
     
     .socials {
