@@ -1,4 +1,4 @@
-// src/components/SkillsSection.jsx
+
 import React, { useState, useEffect } from 'react';
 import './SkillsSection.css';
 

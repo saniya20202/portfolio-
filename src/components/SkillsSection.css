@@ -383,29 +383,30 @@
   }
   
   .skills-slider {
-    width: 65%;
-    height: 160px;
+    width: 75%;
+    height: 190px;
   }
   
   .skill-progress-ring-bg,
   .skill-progress-ring-circle {
-    stroke-width: 6;
+    stroke-width: 8;
   }
   
   .skill-icon {
-    font-size: 22px;
-  }
-  
-  .skill-icon.active {
     font-size: 28px;
   }
   
+  .skill-icon.active {
+    font-size: 45px;
+  }
+  
   .skill-name {
-    font-size: 13px;
+    font-size: 18px;
   }
   
   .skill-proficiency {
-    font-size: 10px;
+    font-size: 20px;
+    margin-top: 20px;
   }
   
   .slider-control {
@@ -416,14 +417,15 @@
   }
   
   .skill-square {
-    width: 45px;
-    height: 45px;
+    width: 59px;
+    height: 59px;
   }
   .skill-square.active{
     transform: scale(1.2);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border: 2px solid #ff7300;
-    margin-top: 4px;
+    box-shadow: 0 4px 8px rgb(255, 1, 1);
+    border: 5px solid #ff7300;
+    margin-top: 5px;
+    
   }
   
   .skill-square i {
@@ -433,7 +435,7 @@
   .skill-squares-container {
     
     margin-top: 2.5rem;
-    max-width: 400px;
+    max-width: 380px;
   }
   
   .skill-squares {
