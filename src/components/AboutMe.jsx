@@ -1,11 +1,11 @@
 import "./AboutMe.css";
-import aboutme from "../assets/aboutme.jpg"; 
+import aboutme from "../assets/aboutme.jpg";  // Import the image correctly
 
 const AboutMe = () => {
     return (
         <div className="aboutme">
             <div className="aboutmeimg">
-                <img src={aboutme} alt="About Me" /> 
+                <img src={aboutme} alt="About Me" />  {/* Use imported image here */}
             </div>
 
             <div className="aboutme-content">
