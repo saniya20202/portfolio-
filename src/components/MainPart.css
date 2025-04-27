@@ -7,272 +7,670 @@
     --bg-dark: #1a1a1a;             /* Dark background */
     --bg-darker: #0d0d0d;           /* Even darker background */
     --success-color: #ff914d;       /* Orange tint */
-  }
+}
   
-  .mainpart {
-      margin-top: 260px;
-      margin-left: 80px;
-      margin-bottom: 280px;
-      color: var(--text-light);
-  }
+.mainpart {
+    margin-top: 260px;
+    margin-left: 80px;
+    margin-bottom: 280px;
+    color: var(--text-light);
+}
   
-  .welcomeNote h4 {
-      font-size: 28px;
-      color: var(--text-muted);
-      font-weight: 400;
-      letter-spacing: 1px;
-  }
+.welcomeNote h4 {
+    font-size: 28px;
+    color: var(--text-muted);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
   
-  .name {
-      font-size: 35px;
-      margin-top: -40px;
-      color: var(--text-muted);
-      font-weight: 200;
-  }
+.name {
+    font-size: 35px;
+    margin-top: -40px;
+    color: var(--text-muted);
+    font-weight: 200;
+}
   
-  .name h3 {
-      font-weight: 500;
-      color: var(--text-light);
-  }
+.name h3 {
+    font-weight: 500;
+    color: var(--text-light);
+}
   
-  .job-title {
-      color: var(--primary-color);
-      font-size: 50px;
-      margin-top: -65px;
-      text-shadow: 0 0 10px rgba(255, 123, 0, 0.3);
-  }
+.job-title {
+    color: var(--primary-color);
+    font-size: 50px;
+    margin-top: -65px;
+    text-shadow: 0 0 10px rgba(255, 123, 0, 0.3);
+}
   
-  .job-title h4 {
-      font-weight: 500;
-  }
+.job-title h4 {
+    font-weight: 500;
+}
   
-  .socials {
-      margin-top: -15px;
-      gap: 20px;
-      display: flex;
-      font-size: 25px;
-  }
+.socials {
+    margin-top: -15px;
+    gap: 20px;
+    display: flex;
+    font-size: 25px;
+}
   
-  .icon-wrapper {
-      background-color: var(--bg-darker);
-      border-radius: 50%;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.5s ease;
-      border: 3px solid var(--primary-color);
-      opacity: 0.9;
-      color: var(--text-light);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+.icon-wrapper {
+    background-color: var(--bg-darker);
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    border: 3px solid var(--primary-color);
+    opacity: 0.9;
+    color: var(--text-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
   
-  /* Hover effect */
-  .icon-wrapper:hover {
-      border: 3px solid var(--accent-color);
-      background-color: var(--primary-color);
-      transform: rotate(360deg) scale(1.1);
-      transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      box-shadow: 0 0 15px var(--primary-color);
-      color: #000;
-  }
+/* Hover effect */
+.icon-wrapper:hover {
+    border: 3px solid var(--accent-color);
+    background-color: var(--primary-color);
+    transform: rotate(360deg) scale(1.1);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 0 15px var(--primary-color);
+    color: #000;
+}
   
-  .btn1 {
-      padding: 12px 25px;
-      margin-top: 60px;
-      margin-right: 20px;
-      background-color: var(--primary-color);
-      width: 150px;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+.btn1 {
+    padding: 12px 25px;
+    margin-top: 60px;
+    margin-right: 20px;
+    background-color: var(--primary-color);
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.profile-image-container img{
+    width: 450px;
+    height: 450px;
+    
+}
   
-  .btn1:hover {
-      background-color: var(--secondary-color);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  }
+.btn1:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
   
-  .btn3 {
-      padding: 12px 25px;
-      margin-top: 60px;
-      margin-right: 20px;
-      background-color: transparent;
-      width: 200px;
-      border: 1px solid var(--primary-color);
-      border-radius: 5px;
-      color: var(--primary-color);
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.3s ease;
-  }
+.btn3 {
+    padding: 12px 25px;
+    margin-top: 60px;
+    margin-right: 20px;
+    background-color: transparent;
+    width: 200px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
   
-  .btn3:hover {
-      background-color: rgba(255, 123, 0, 0.1);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+.btn3:hover {
+    background-color: rgba(255, 123, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ENHANCED PROFILE IMAGE STYLES */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+}
+
+/* Increased container size for larger image */
+.profile-image-container {
+    position: relative;
+    width: 600px;  /* Increased from 400px */
+    height: 600px; /* Increased from 400px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Increased wrapper size for larger image */
+.profile-image-wrapper {
+    position: relative;
+    width: 450px;  /* Increased from 300px */
+    height: 450px; /* Increased from 300px */
+    animation: float 6s ease-in-out infinite;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 5;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
+    filter: brightness(1.05) contrast(1.05);
+    border: 4px solid var(--primary-color);
+}
+
+.profile-image-wrapper:hover .profile-image {
+    transform: scale(1.15);
+    filter: brightness(1.1) contrast(1.1) opacity(0.8) ;
+
+    box-shadow: 0 12px 70px rgb(255, 102, 0);
+}
+
+/* Enhanced rotating border - made larger */
+.profile-image-border {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: -25px;
+    bottom: -25px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+    z-index: 2;
+    animation: rotateBorder 12s linear infinite;
+    opacity: 0.8;
+}
+
+/* Enhanced outer glow effect - made larger and more intense */
+.profile-image-glow {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,123,0,0.6) 0%, rgba(255,123,0,0) 70%);
+    z-index: 1;
+    filter: blur(30px);
+    animation: pulse 5s ease-in-out infinite alternate;
+}
+
+/* Added second glow layer for more intense effect */
+.profile-image-glow-outer {
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    right: -60px;
+    bottom: -60px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,170,68,0.4) 0%, rgba(255,123,0,0) 80%);
+    z-index: 0;
+    filter: blur(40px);
+    animation: pulseOuter 7s ease-in-out infinite alternate-reverse;
+}
+
+/* Improved particles around the image */
+.profile-image-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+/* Water drop style particles - made larger and more visible */
+.particle {
+    position: absolute;
+    background: radial-gradient(circle at 30% 30%, var(--accent-color), var(--primary-color));
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px var(--primary-color));
+    z-index: 3;
+}
+
+/* Added different sized particles */
+.particle-large {
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+}
+
+.particle-medium {
+    width: 10px;
+    height: 10px;
+    opacity: 0.7;
+}
+
+.particle-small {
+    width: 6px;
+    height: 6px;
+    opacity: 0.6;
+}
+
+/* Added splash effect particles */
+.splash {
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 40% 40% 60% 60%;
+    z-index: 3;
+    opacity: 0.6;
+    filter: drop-shadow(0 0 2px var(--accent-color));
+}
+
+/* Increased number of particles and improved positioning */
+.particle-1 { top: 15%; left: 8%; animation: floatParticle 8s ease-in-out infinite, fadeInOut 4s ease-in-out infinite; }
+.particle-2 { top: 25%; right: 12%; animation: floatParticle 9s ease-in-out infinite 1s, fadeInOut 5s ease-in-out infinite 0.5s; }
+.particle-3 { bottom: 18%; left: 10%; animation: floatParticle 7s ease-in-out infinite 0.5s, fadeInOut 3.5s ease-in-out infinite 1s; }
+.particle-4 { bottom: 22%; right: 18%; animation: floatParticle 10s ease-in-out infinite 2s, fadeInOut 6s ease-in-out infinite 1.5s; }
+.particle-5 { top: 45%; left: 4%; animation: floatParticle 11s ease-in-out infinite 1.5s, fadeInOut 4.5s ease-in-out infinite 2s; }
+.particle-6 { top: 40%; right: 5%; animation: floatParticle 9s ease-in-out infinite 3s, fadeInOut 5s ease-in-out infinite 2.5s; }
+.particle-7 { bottom: 45%; left: 0%; animation: floatParticle 8s ease-in-out infinite 2.5s, fadeInOut 4s ease-in-out infinite 3s; }
+.particle-8 { top: 5%; right: 45%; animation: floatParticle 10s ease-in-out infinite 1.8s, fadeInOut 5.5s ease-in-out infinite 1.2s; }
+.particle-9 { top: 30%; left: 0%; animation: floatParticle 12s ease-in-out infinite 2s, fadeInOut 6s ease-in-out infinite 3s; }
+.particle-10 { bottom: 8%; right: 30%; animation: floatParticle 11s ease-in-out infinite 3.5s, fadeInOut 5s ease-in-out infinite 2.7s; }
+.particle-11 { top: 0%; left: 40%; animation: floatParticle 9s ease-in-out infinite 0.2s, fadeInOut 4.5s ease-in-out infinite 1.5s; }
+.particle-12 { bottom: 15%; left: 35%; animation: floatParticle 10s ease-in-out infinite 1.3s, fadeInOut 5.2s ease-in-out infinite 2.1s; }
+
+/* Water splash particles */
+.splash-1 { top: 12%; left: 0%; transform: rotate(45deg); animation: splashMove 5s ease-in-out infinite 0.5s, fadeInOut 3s ease-in-out infinite 1s; }
+.splash-2 { top: 20%; right: 5%; transform: rotate(-30deg); animation: splashMove 6s ease-in-out infinite 1.5s, fadeInOut 4s ease-in-out infinite 0.7s; }
+.splash-3 { bottom: 25%; left: 8%; transform: rotate(60deg); animation: splashMove 7s ease-in-out infinite 2.5s, fadeInOut 3.5s ease-in-out infinite 1.2s; }
+.splash-4 { bottom: 10%; right: 15%; transform: rotate(-15deg); animation: splashMove 5.5s ease-in-out infinite 0.2s, fadeInOut 4.2s ease-in-out infinite 2.3s; }
+
+/* Added circling dots */
+.circling-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 4px var(--primary-color));
+    z-index: 4;
+    opacity: 0.8;
+}
+
+.dot-1 { animation: circlePath 15s linear infinite; }
+.dot-2 { animation: circlePath 15s linear infinite 5s; }
+.dot-3 { animation: circlePath 15s linear infinite 10s; }
+
+/* Enhanced animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-15px) rotate(1deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-15px) rotate(-1deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* Improved rotating border animation */
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-position: 0% 50%;
+    }
+}
+
+/* Enhanced pulse animations */
+@keyframes pulse {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.92);
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes pulseOuter {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.95);
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.4;
+        transform: scale(1.1);
+    }
+}
+
+/* Enhanced particle floating animation */
+@keyframes floatParticle {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(20px, 20px);
+    }
+    50% {
+        transform: translate(0, 40px);
+    }
+    75% {
+        transform: translate(-20px, 20px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* New splash animation */
+@keyframes splashMove {
+    0% {
+        transform: translateY(0) rotate(var(--rotation, 45deg));
+    }
+    50% {
+        transform: translateY(-30px) rotate(var(--rotation, 45deg));
+    }
+    100% {
+        transform: translateY(0) rotate(var(--rotation, 45deg));
+    }
+}
+
+/* Enhanced fade animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+/* New animation for circling dots */
+@keyframes circlePath {
+    0% {
+        transform: rotate(0deg) translateX(220px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(220px) rotate(-360deg);
+    }
+}
+
+/* Responsive styles - updated for larger image */
+/* Large screens (desktops) */
+@media screen and (max-width:1460) {
+    .main-container{
+        max-width: 600px;
+    }
   
-  /* Responsive styles remain the same as before */
-  /* Large screens (desktops) */
-  @media screen and (max-width: 1200px) {
-      .mainpart {
-          margin-top: 220px;
-          margin-left: 60px;
-          margin-bottom: 240px;
-      }
-      
-      .welcomeNote h4 {
-          font-size: 26px;
-      }
-      
-      .name {
-          font-size: 32px;
-      }
-      
-      .job-title {
-          font-size: 46px;
-      }
-  }
-  
-  /* Medium screens (tablets) */
-  @media screen and (max-width: 992px) {
-      .mainpart {
-          margin-top: 180px;
-          margin-left: 40px;
-          margin-bottom: 200px;
-      }
-      
-      .welcomeNote h4 {
-          font-size: 24px;
-      }
-      
-      .name {
-          font-size: 30px;
-          margin-top: -35px;
-      }
-      
-      .job-title {
-          font-size: 42px;
-          margin-top: -60px;
-      }
-      
-      .socials {
-          font-size: 22px;
-      }
-      
-      .btn1, .btn3 {
-          margin-top: 50px;
-      }
-  }
-  
-  /* Small screens (mobile devices) */
-  @media screen and (max-width: 768px) {
-      .mainpart {
-          margin-top: 150px;
-          margin-left: 25px;
-          margin-right: 25px;
-          margin-bottom: 150px;
-      }
-      
-      .welcomeNote h4 {
-          font-size: 22px;
-      }
-      
-      .name {
-          font-size: 28px;
-          margin-top: -30px;
-      }
-      
-      .job-title {
-          font-size: 38px;
-          margin-top: -50px;
-      }
-      
-      .socials {
-          font-size: 20px;
-          gap: 15px;
-      }
-      
-      .icon-wrapper {
-          padding: 8px;
-      }
-      
-      .btn1, .btn3 {
-          margin-top: 40px;
-          padding: 10px 15px;
-      }
-      
-      .btn1 {
-          width: 130px;
-      }
-      
-      .btn3 {
-          width: 170px;
-      }
-  }
-  
-  /* Extra small screens */
-  @media screen and (max-width: 480px) {
-      .mainpart {
-          margin-top: 120px;
-          margin-left: 15px;
-          margin-right: 15px;
-          margin-bottom: 120px;
-      }
-      
-      .welcomeNote h4 {
-          font-size: 18px;
-      }
-      
-      .name {
-          font-size: 24px;
-          margin-top: -25px;
-      }
-      
-      .job-title {
-          font-size: 32px;
-          margin-top: -40px;
-      }
-      
-      .socials {
-          font-size: 18px;
-          gap: 12px;
-      }
-      
-      .icon-wrapper {
-          padding: 7px;
-          border-width: 2px;
-      }
-      
-      .btn1, .btn3 {
-          margin-top: 30px;
-          padding: 8px 12px;
-          margin-right: 10px;
-          font-size: 14px;
-      }
-      
-      .btn1 {
-          width: 110px;
-      }
-      
-      .btn3 {
-          width: 140px;
-      }
-      
-      /* Stack buttons vertically on very small screens */
-      @media screen and (max-width: 360px) {
-          .btn1, .btn3 {
-              display: block;
-              margin-right: 0;
-              margin-bottom: 15px;
-              width: 80%;
-              max-width: 200px;
-          }
-      }
-  }
+    
+}
+@media screen and (max-width: 1200px) {
+    .profile-image-container img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .main-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1050px;
+    }
+    .mainpart {
+        margin-top: 220px;
+        margin-left: 60px;
+        margin-bottom: 240px;
+    }
+    
+    .welcomeNote h4 {
+        font-size: 26px;
+    }
+    
+    .name {
+        font-size: 32px;
+    }
+    
+    .job-title {
+        font-size: 46px;
+    }
+    
+    .profile-image-container {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .profile-image-wrapper {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 992px) {
+    .profile-image-container img{
+        width: 298px;
+        height: 300px;
+        
+    }
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+        max-width: 600px;
+    }
+    
+    .mainpart {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .profile-image-container {
+        width: 900px;
+        height: 400px;
+        margin-top: -95px;
+        margin-bottom: 50px;
+    }
+    
+    .profile-image-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .welcomeNote h4 {
+        font-size: 24px;
+    }
+    
+    .name {
+        font-size: 30px;
+        margin-top: -35px;
+    }
+    
+    .job-title {
+        font-size: 42px;
+        margin-top: -60px;
+    }
+    
+    .socials {
+        font-size: 22px;
+        justify-content: center;
+    }
+    
+    .btn1, .btn3 {
+        margin-top: 50px;
+    }
+}
+
+/* Small screens (mobile devices) */
+@media screen and (max-width: 768px) {
+    .profile-image-container img{
+        width: 250px;
+        height: 250px;
+        
+    }
+    
+    .mainpart {
+        margin-top: 150px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 150px;
+    }
+    
+    .welcomeNote h4 {
+        font-size: 22px;
+    }
+    
+    .name {
+        font-size: 28px;
+        margin-top: -30px;
+    }
+    
+    .job-title {
+        font-size: 38px;
+        margin-top: -50px;
+    }
+    
+    .socials {
+        font-size: 20px;
+        gap: 15px;
+    }
+    
+    .icon-wrapper {
+        padding: 8px;
+    }
+    
+    .btn1, .btn3 {
+        margin-top: 40px;
+        padding: 10px 15px;
+    }
+    
+    .btn1 {
+        width: 130px;
+    }
+    
+    .btn3 {
+        width: 170px;
+    }
+    
+    .profile-image-container {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .profile-image-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+    .profile-image-container img{
+        margin-left: -4px;
+        width: 200px;
+        height: 200px;
+        
+
+        
+    }
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+        max-width: 340px;
+    }
+
+    .mainpart {
+        margin-top: 89px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 150px;
+    }
+    
+    .welcomeNote h4 {
+        font-size: 18px;
+    }
+    
+    .name {
+        font-size: 24px;
+        margin-top: 5px;
+    }
+    
+   .job-title{
+    max-width: 3000px;
+    min-width: 450px;
+    font-size: 35px;
+    margin-top: -25px;
+   }
+    
+    
+    .socials {
+        font-size: 18px;
+        gap: 12px;
+    }
+    
+    .icon-wrapper {
+        padding: 7px;
+        border-width: 2px;
+    }
+    
+    .btn1, .btn3 {
+        margin-top: 30px;
+        padding: 8px 12px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    
+    .btn1 {
+        width: 110px;
+    }
+    
+    .btn3 {
+        width: 140px;
+    }
+    
+    .profile-image-container {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .profile-image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Stack buttons vertically on very small screens */
+    @media screen and (max-width: 360px) {
+        .btn1, .btn3 {
+            display: block;
+            margin-right: 0;
+            margin-bottom: 15px;
+            width: 80%;
+            max-width: 200px;
+        }
+    }
+}
