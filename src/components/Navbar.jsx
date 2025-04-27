@@ -35,7 +35,6 @@ const Navbar = () => {
                 checked={menuOpen}
                 onChange={toggleMenu}
             />
-            <label htmlFor="menu-toggle" className="menu-btn">☰</label>
             <nav className={scrolled ? "scrolled" : ""}>    
                 <ul className={menuOpen ? "menu-open" : ""}>
                     <li className="close-menu-container">
@@ -47,9 +46,10 @@ const Navbar = () => {
                     <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>   
                     <li><a href="#contact" onClick={toggleMenu}>Contact Me</a></li>         
                 </ul>
-                
+                <label htmlFor="menu-toggle" className="menu-btn">☰</label>
                 {/* Logo with image and name */}
                 <div className="logo">
+                    
                     <a href="#home" className="logo-link">
                         <span className="logo-name">SANDIPA</span>
                         <img src="images/image.png" alt="SANDIPA" className="logo-img" />
