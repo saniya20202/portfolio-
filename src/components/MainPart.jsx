@@ -85,8 +85,14 @@ const MainPart = () => {
                     </a>
                 </div>
 
-                <button className='btn1'>Hire me </button>
-                <button className='btn3'>Download CV</button>
+                <button className='btn1'>My Projects </button>
+                <a 
+  href="/DeshanCV.pdf" 
+  download 
+  className="btn3"
+>
+  Download CV
+</a>
             </div>
             
             {/* Enhanced Profile Image Container with new effects */}

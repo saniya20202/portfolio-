@@ -104,29 +104,28 @@
 }
   
 .btn1:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    color: #F56F10;
+    background-color: var(--text-light);
+    box-shadow: 0 5px 16px rgb(255, 125, 19);
 }
   
 .btn3 {
     padding: 12px 25px;
     margin-top: 60px;
     margin-right: 20px;
-    background-color: transparent;
+    background-color:var(--text-light) ;
     width: 200px;
-    border: 1px solid var(--primary-color);
     border-radius: 5px;
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
 }
   
 .btn3:hover {
-    background-color: rgba(255, 123, 0, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0 5px 16px rgb(255, 125, 19);
 }
 
 /* ENHANCED PROFILE IMAGE STYLES */
