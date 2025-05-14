@@ -15,20 +15,43 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    z-index: 1000; /* Ensure navbar stays on top */
-    transition: all 0.3s ease; /* Smooth transition for background changes */
+    z-index: 1000; 
+    transition: all 0.3s ease; 
 }
 
-/* Scrolled state with blur effect */
+
 nav.scrolled {
     height: 50px;
     background-color: rgb(230, 121, 20);
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); /* For Safari */
+    -webkit-backdrop-filter: blur(8px); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+nav.scrolled ul li a{
+    color: black;
+    font-weight: 700;
+    font-size: larger;
+}
+nav.scrolled ul li a:hover {
+    color: black;
+    
+}
+nav.scrolled ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 5px;
+    background-color: #070707;
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;
+}
+nav.scrolled .logo-name:hover{
+    color: #000;
+}
 
-/* Checkbox hack for mobile menu */
+
 #menu-toggle {
     display: none;
 }
