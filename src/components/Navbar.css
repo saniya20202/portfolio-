@@ -288,9 +288,7 @@ nav ul li a:hover {
         top: 5px;
     }
     
-    .logo-name, .logo-img {
-        display: none;
-    }
+
     
     .logo-circle {
         display: block;

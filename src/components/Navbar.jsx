@@ -53,9 +53,7 @@ const Navbar = () => {
                     <a href="#home" className="logo-link">
                         <span className="logo-name">SANDIPA</span>
                         <img src="images/image.png" alt="SANDIPA" className="logo-img" />
-                        <div className="logo-circle">
-                            <img src="images/image.png" alt="S" className="logo-circle-img" />
-                        </div>
+                        
                     </a>
                 </div>
             </nav>
