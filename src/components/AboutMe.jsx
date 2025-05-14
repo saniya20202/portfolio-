@@ -27,7 +27,16 @@ const AboutMe = () => {
 
 
                 </p>
-                <button className='btn2'>Download CV</button>
+                <center>
+                <a  
+                   href="/Sandipa_CV.pdf" 
+                   download 
+                  className="btn3"
+                >
+                 Download CV
+                </a>
+                </center>
+
             </div>
         </div>
     );
