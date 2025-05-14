@@ -28,7 +28,7 @@ nav.scrolled {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 nav.scrolled ul li a{
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: larger;
 }
