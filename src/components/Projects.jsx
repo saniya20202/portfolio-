@@ -70,7 +70,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Portfolio Website",
-      description: "A real-time ticketing simulator featuring a Java-based CLI for core operations and a frontend-backend system for user interactions. Designed to provide fast and efficient ticket processing, it accurately simulates real-world ticketing scenarios with real-time updates. ",
+      description: "Developed a responsive and visually appealing personal portfolio website using React. Showcased projects, skills, and contact information with a modern layout, smooth navigation, and interactive styling effects. Ensuredcompatibility across various devices and browsers. ",
       technologies: [ "React", "Tailwind CSS"],
       image: "/images/project6.jpg", 
       codeLink: "https://github.com/yourusername/project"
